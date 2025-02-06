@@ -2,4 +2,4 @@
 
 SELECT score, name
 	FROM second_table 
-	ORDER BY score AND name DESC;"
+	ORDER BY score AND name DESC;

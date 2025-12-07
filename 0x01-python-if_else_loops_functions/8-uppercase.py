@@ -8,4 +8,4 @@ def uppercase(str):
             new.append(chr(ord(letter) - 32))
         else:
             new.append(letter)
-    print("".join(new))
+    print("{}".format("".join(new)))

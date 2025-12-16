@@ -28,6 +28,9 @@ class Square:
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
 
+        if len(self.__position) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+
     @property
     def size(self):
         """Retrieves the size of the square
@@ -87,6 +90,9 @@ class Square:
             not isinstance(value[0], int) or
             not isinstance(value[1], int)
         ):
+            raise TypeError("position must be a tuple of 2 positive integers")
+
+        if len(self.__position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = value
